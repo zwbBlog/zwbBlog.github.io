@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://zwbblog.github.io.git/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
@@ -182,7 +182,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue-js/">vue.js</a></li></ul>
                     </div>
                 </section>
                 
@@ -263,7 +263,7 @@
   
     <div class="article-meta">
       <a href="/2017/12/07/hello-world/" class="article-date">
-      <time datetime="2017-12-07T03:37:36.137Z" itemprop="datePublished">2017-12-07</time>
+      <time datetime="2017-12-07T05:51:55.749Z" itemprop="datePublished">2017-12-07</time>
 </a>
 
 
@@ -278,7 +278,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/07/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/12/07/hello-world/">Hello zhangwenbin</a>
     </h1>
   
 
@@ -306,6 +306,122 @@
       
 
       
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Reg" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/08/Reg/" class="article-date">
+      <time datetime="2016-06-08T06:07:12.000Z" itemprop="datePublished">2016-06-08</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/08/Reg/">new Regexp(zhangwenbin)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 常用字符集：</span></span><br><span class="line">* \做为转意，即通常在<span class="string">"\"后面的字符不按原来意义解释，如/b/匹配字符"</span>b<span class="string">"，当b前面加了反斜杆后/\b/，转意为匹配一个单词的边界;/a*/将匹配a,aa,aaa，加了"</span>\<span class="string">"后，/a\*/将只匹配"</span>a*<span class="string">"</span></span><br><span class="line"><span class="string">* ^ 匹配一个输入或一行的开头，/^a/匹配"</span>an A<span class="string">"，而不匹配"</span>An a<span class="string">" </span></span><br><span class="line"><span class="string">* $ 匹配一个输入或一行的结尾，/a$/匹配"</span>An a<span class="string">"，而不匹配"</span>an A<span class="string">" </span></span><br><span class="line"><span class="string">* * 匹配前面元字符0次或多次，/ba*/将匹配b,ba,baa,baaa </span></span><br><span class="line"><span class="string">* + 匹配前面元字符1次或多次，/ba*/将匹配ba,baa,baaa </span></span><br><span class="line"><span class="string">* ? 匹配前面元字符0次或1次，/ba*/将匹配b,ba </span></span><br><span class="line"><span class="string">* (x) 匹配x保存x在名为<span class="variable">$1</span>...<span class="variable">$9</span>的变量中 </span></span><br><span class="line"><span class="string">* x|y 匹配x或y </span></span><br><span class="line"><span class="string">* &#123;n&#125; 精确匹配n次 </span></span><br><span class="line"><span class="string">* &#123;n,&#125; 匹配n次以上 </span></span><br><span class="line"><span class="string">* &#123;n,m&#125; 匹配n-m次 </span></span><br><span class="line"><span class="string">* [xyz] 字符集(character set)，匹配这个集合中的任一一个字符(或元字符) </span></span><br><span class="line"><span class="string">* [^xyz] 不匹配这个集合中的任何一个字符 </span></span><br><span class="line"><span class="string">* [\b] 匹配一个退格符 </span></span><br><span class="line"><span class="string">* \b 匹配一个单词的边界 </span></span><br><span class="line"><span class="string">* \B 匹配一个单词的非边界 </span></span><br><span class="line"><span class="string">* \cX 这儿，X是一个控制符，/\cM/匹配Ctrl-M </span></span><br><span class="line"><span class="string">* \d 匹配一个数字字符，/\d/ = /[0-9]/ </span></span><br><span class="line"><span class="string">* \D 匹配一个非数字字符，/\D/ = /[^0-9]/ </span></span><br><span class="line"><span class="string">* \n 匹配一个换行符 </span></span><br><span class="line"><span class="string">* \r 匹配一个回车符 </span></span><br><span class="line"><span class="string">* \s 匹配一个空白字符，包括\n,\r,\f,\t,\v等 </span></span><br><span class="line"><span class="string">* \S 匹配一个非空白字符，等于/[^\n\f\r\t\v]/ </span></span><br><span class="line"><span class="string">* \t 匹配一个制表符 </span></span><br><span class="line"><span class="string">* \v 匹配一个重直制表符 </span></span><br><span class="line"><span class="string">* \w 匹配一个可以组成单词的字符(alphanumeric，这是我的意译，含数字)，包括下划线，如[\w]匹配"</span><span class="variable">$5</span>.98<span class="string">"中的5，等于[a-zA-Z0-9] </span></span><br><span class="line"><span class="string">* \W 匹配一个不可以组成单词的字符，如[\W]匹配"</span><span class="variable">$5</span>.98<span class="string">"中的$，等于[^a-zA-Z0-9]。</span></span><br><span class="line"><span class="string">* flags: g （全文查找出现的所有 pattern）</span></span><br><span class="line"><span class="string">* i （忽略大小写）</span></span><br><span class="line"><span class="string">* m （多行查找）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">## 动态正则:</span></span><br><span class="line"><span class="string">* var re = "</span>/<span class="string">" + reg + "</span>/igm<span class="string">"     或者   reg = new RegExp("</span>pattern<span class="string">","</span>igm<span class="string">")</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">用正则表达式限制只能输入数字：onkeyup="</span>value=value.replace(/[^\d]/g,<span class="string">') </span></span><br><span class="line"><span class="string">用正则表达式限制只能输入中文：onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'</span>)<span class="string">" </span></span><br><span class="line"><span class="string">用正则表达式限制只能输入数字和英文：onkeyup="</span>value=value.replace(/[\W]/g,<span class="string">') </span></span><br><span class="line"><span class="string">去掉字符串头尾多余的空格:</span></span><br><span class="line"><span class="string">function String.prototype.Trim()&#123;return this.replace(/(^\s*)|(\s*$)/g, "");&#125;</span></span><br><span class="line"><span class="string">"^\\d+$"　　//非负整数（正整数 + 0） </span></span><br><span class="line"><span class="string">"^[0-9]*[1-9][0-9]*$"　　//正整数 </span></span><br><span class="line"><span class="string">"^((-\\d+)|(0+))$"　　//非正整数（负整数 + 0） </span></span><br><span class="line"><span class="string">"^-[0-9]*[1-9][0-9]*$"　　//负整数 </span></span><br><span class="line"><span class="string">"^-?\\d+$"　　　　//整数 </span></span><br><span class="line"><span class="string">"^\\d+(\\.\\d+)?$"　　//非负浮点数（正浮点数 + 0） </span></span><br><span class="line"><span class="string">"^(([0-9]+\\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\\.[0-9]+)|([0-9]*[1-9][0-9]*))$"　　//正浮点数</span></span><br><span class="line"><span class="string">"^((-\\d+(\\.\\d+)?)|(0+(\\.0+)?))$"　　//非正浮点数（负浮点数 + 0） </span></span><br><span class="line"><span class="string">"^(-(([0-9]+\\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\\.[0-9]+)|([0-9]*[1-9][0-9]*)))$"　　//负浮点数</span></span><br><span class="line"><span class="string">"^(-?\\d+)(\\.\\d+)?$"　　//浮点数 </span></span><br><span class="line"><span class="string">"^[A-Za-z]+$"　　//由26个英文字母组成的字符串 </span></span><br><span class="line"><span class="string">"^[A-Z]+$"　　//由26个英文字母的大写组成的字符串 </span></span><br><span class="line"><span class="string">"^[a-z]+$"　　//由26个英文字母的小写组成的字符串 </span></span><br><span class="line"><span class="string">"^[A-Za-z0-9]+$"　　//由数字和26个英文字母组成的字符串 </span></span><br><span class="line"><span class="string">"^\\w+$"　　//由数字、26个英文字母或者下划线组成的字符串 </span></span><br><span class="line"><span class="string">"^[\\w-]+(\\.[\\w-]+)*@[\\w-]+(\\.[\\w-]+)+$"　　　　//email地址 </span></span><br><span class="line"><span class="string">"^[a-zA-z]+://(\\w+(-\\w+)*)(\\.(\\w+(-\\w+)*))*(\\?\\S*)?$"　　//url</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-vue-js" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/02/01/vue-js/" class="article-date">
+      <time datetime="2015-02-01T06:07:12.000Z" itemprop="datePublished">2015-02-01</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/01/vue-js/">vue.js</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue-js/">vue.js</a></li></ul>
+    </div>
+
       
       <div class="clearfix"></div>
     </div>
